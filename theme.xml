@@ -270,7 +270,7 @@
  <imagegrid name="gamegrid">
   <scrollDirection>vertical</scrollDirection>
   <pos>0.2 0.05</pos>
-  <size>0.4 0.9</size>
+  <size>0.3 0.9</size>
   <margin>0.0115 0.0115</margin>
   <!--
   <folderImage>./_assets/grid_folder.png</folderImage>
