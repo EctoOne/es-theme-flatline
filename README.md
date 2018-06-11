@@ -13,6 +13,14 @@ https://retropie.org.uk/forum/topic/17809/
 
 ---
 
+### Screenshots
+
+![System](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/systemview.png) \
+![Video](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/videoview.png) \
+![Grid](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/gridview.png) \
+
+---
+
 ### Font Credits
 
 * [Shadows Into Light by Kimberly Geswein (Principal design)](https://fonts.google.com/specimen/Shadows+Into+Light)
