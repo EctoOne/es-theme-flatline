@@ -14,9 +14,11 @@ https://retropie.org.uk/forum/topic/17809/
 ---
 
 ### Screenshots
-
+System View: \
 ![System](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/systemview.png) \
+Video View: \
 ![Video](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/videoview.png) \
+Grid View: \
 ![Grid](https://raw.githubusercontent.com/EctoOne/es-theme-flatline/master/_assets/preview/gridview.png) \
 
 ---
