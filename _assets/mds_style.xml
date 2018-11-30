@@ -31,40 +31,41 @@
 		<text name="mds_manufacturer" extra="true">
 			<pos>0.725 0.1</pos>
 		</text>
-		
+
 		<text name="mds_lbl_release" extra="true">
 			<pos>0.725 0.15</pos>
 		</text>
 		<text name="mds_release" extra="true">
 			<pos>0.725 0.15</pos>
 		</text>
-		
+
 		<text name="mds_lbl_type" extra="true">
 			<pos>0.725 0.2</pos>
 		</text>
 		<text name="mds_type" extra="true">
 			<pos>0.725 0.2</pos>
 		</text>
-		
+
 		<text name="mds_lbl_cpu" extra="true">
 			<pos>0.725 0.25</pos>
 		</text>
 		<text name="mds_cpu" extra="true">
 			<pos>0.725 0.25</pos>
 		</text>
-		
+
 		<text name="mds_lbl_generation" extra="true">
 			<pos>0.725 0.3</pos>
 		</text>
 		<text name="mds_generation" extra="true">
 			<pos>0.725 0.3</pos>
 		</text>
-		
+
 		<text name="mds_description" extra="true">
 			<pos>0.725 0.35</pos>
 		</text>
 
 	</view>
+
 	<view name="detailed, video, grid">
 
 		<text name="mds_lbl_manufacturer, mds_manufacturer, mds_lbl_release, mds_release, mds_lbl_type, mds_type, mds_lbl_cpu, mds_cpu, mds_lbl_generation, mds_generation, mds_description" extra="true">
