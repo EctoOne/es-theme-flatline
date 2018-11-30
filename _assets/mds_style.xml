@@ -65,5 +65,14 @@
 		</text>
 
 	</view>
+	<view name="detailed, video, grid">
+
+		<text name="mds_lbl_manufacturer, mds_manufacturer, mds_lbl_release, mds_release, mds_lbl_type, mds_type, mds_lbl_cpu, mds_cpu, mds_lbl_generation, mds_generation, mds_description" extra="true">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+			<size>0 0</size>
+		</text>
+
+	</view>
 
 </theme>
