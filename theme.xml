@@ -1,290 +1,309 @@
 <theme>
 <formatVersion>4</formatVersion>
 
-<!-- Color Variables -->
-<variables>
- <backgroundColor>111111</backgroundColor>
- 
- <mainColor>E2E2E2</mainColor>
- <highlightColor>606060</highlightColor>
- <secondaryColor>888888</secondaryColor>
- 
- <mainFont>Wire_One/WireOne.ttf</mainFont>
- <descriptionFont>Shadows_Into_Light/ShadowsIntoLight.ttf</descriptionFont>
- <carouselFont>flamingo2/FlamingoLicht.otf</carouselFont>
-</variables>
+	<!-- Color Variables -->
+	<variables>
+		<backgroundColor>111111</backgroundColor>
 
-<!-- Global Element Settings -->
-<view name="system, basic, detailed, video, grid">
-<!-- Layout -->
- <image name="background" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${backgroundColor}</color>
-  <origin>0 0</origin>
-  <pos>0 0</pos>
-  <size>1 1</size>
-  <zIndex>1</zIndex>
- </image>
- <image name="topleftup" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 1</origin>
-  <pos>0.2 0.5</pos>
-  <size>0.001 0.45</size>
- </image>
- <image name="topleftleft" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>1 1</origin>
-  <pos>0.2 0.5</pos>
-  <size>0.15 0.001</size>
- </image>
- <image name="bottomleftdown" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 0</origin>
-  <pos>0.2 0.75</pos>
-  <size>0.001 0.2</size>
- </image>
- <image name="bottomleftleft" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>1 0</origin>
-  <pos>0.2 0.75</pos>
-  <size>0.15 0.001</size>
- </image>
- <image name="toprightup" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 1</origin>
-  <pos>0.5 0.5</pos>
-  <size>0.001 0.45</size>
- </image>
- <image name="toprightright" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 1</origin>
-  <pos>0.5 0.5</pos>
-  <size>0.45 0.001</size>
- </image>
- <image name="bottomrightdown" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 0</origin>
-  <pos>0.5 0.75</pos>
-  <size>0.001 0.2</size>
- </image>
- <image name="bottomrightright" extra="true">
-  <path>./_assets/dot.png</path>
-  <color>${mainColor}</color>
-  <origin>0 1</origin>
-  <pos>0.5 0.75</pos>
-  <size>0.45 0.001</size>
- </image>
+		<mainColor>E2E2E2</mainColor>
+		<highlightColor>606060</highlightColor>
+		<secondaryColor>888888</secondaryColor>
 
- <!-- Text Logo -->
- <text name="logoText">
-  <fontPath>./_assets/fonts/${carouselFont}</fontPath>
-  <text>${system.fullName}</text>
-  <color>${mainColor}</color>
-  <forceUppercase>1</forceUppercase>
-  <lineSpacing>1</lineSpacing>
- </text>
+		<mainFont>Wire_One/WireOne.ttf</mainFont>
+		<descriptionFont>Shadows_Into_Light/ShadowsIntoLight.ttf</descriptionFont>
+		<carouselFont>flamingo2/FlamingoLicht.otf</carouselFont>
+	</variables>
 
- <!-- Metadata Settings -->
- <text name="md_name, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-  <fontPath>./_assets/fonts/${mainFont}</fontPath>
-  <forceUppercase>1</forceUppercase>
-  <fontSize>0.035</fontSize>
-  <color>${mainColor}</color>
-  <alignment>center</alignment>
- </text>
- <datetime name="md_lastplayed, md_releasedate">
-  <forceUppercase>0</forceUppercase>
-  <fontSize>0.03</fontSize>
- </datetime>
- <text name="md_description">
-  <fontPath>./_assets/fonts/${descriptionFont}</fontPath>
-  <forceUppercase>0</forceUppercase>
-  <lineSpacing>0.85</lineSpacing>
-  <fontSize>0.03</fontSize>
-  <color>${secondaryColor}</color>
-  <alignment>center</alignment>
- </text>
- <textlist name="gamelist">
-  <fontPath>./_assets/fonts/${mainFont}</fontPath>
-  <alignment>center</alignment>
-  <lineSpacing>1.075</lineSpacing>
-  <fontSize>0.04</fontSize>
-  <selectedColor>${secondaryColor}</selectedColor>
-  <primaryColor>${mainColor}</primaryColor>
-  <secondaryColor>${secondaryColor}</secondaryColor>
-  <selectorImagePath>./_assets/dot.png</selectorImagePath>
-  <selectorImageTile>false</selectorImageTile>
-  <selectorColor>${highlightColor}</selectorColor>
-  <selectorHeight>0.001</selectorHeight>
-  <selectorOffsetY>0.045</selectorOffsetY>
- </textlist>
- <!-- Helpsystem -->
- <helpsystem name="help">
-  <fontSize>0.025</fontSize>
-  <origin>0.5 1</origin>
-  <pos>0.5 1</pos>
-  <textColor>${secondaryColor}</textColor>
-  <iconColor>${mainColor}</iconColor>
- </helpsystem>
- 
- <!-- Hidden Elements-->		
- <text name="md_name, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-  <pos>1 1</pos>
-  </text>
- <datetime name="md_lastplayed, md_releasedate">
-  <pos>1 1</pos>
- </datetime>
- <rating name="md_rating">
-  <pos>1 1</pos>
- </rating>
-</view>
+	<!-- Global Element Settings -->
+	<view name="system, basic, detailed, video, grid">
+		<!-- Layout -->
+		<image name="background" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${backgroundColor}</color>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="topleftup" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 1</origin>
+			<pos>0.2 0.5</pos>
+			<size>0.001 0.45</size>
+		</image>
+		<image name="topleftleft" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>1 1</origin>
+			<pos>0.2 0.5</pos>
+			<size>0.15 0.001</size>
+		</image>
+		<image name="bottomleftdown" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 0</origin>
+			<pos>0.2 0.75</pos>
+			<size>0.001 0.2</size>
+		</image>
+		<image name="bottomleftleft" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>1 0</origin>
+			<pos>0.2 0.75</pos>
+			<size>0.15 0.001</size>
+		</image>
+		<image name="toprightup" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 1</origin>
+			<pos>0.5 0.5</pos>
+			<size>0.001 0.45</size>
+		</image>
+		<image name="toprightright" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 1</origin>
+			<pos>0.5 0.5</pos>
+			<size>0.45 0.001</size>
+		</image>
+		<image name="bottomrightdown" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 0</origin>
+			<pos>0.5 0.75</pos>
+			<size>0.001 0.2</size>
+		</image>
+		<image name="bottomrightright" extra="true">
+			<path>./_assets/dot.png</path>
+			<color>${mainColor}</color>
+			<origin>0 1</origin>
+			<pos>0.5 0.75</pos>
+			<size>0.45 0.001</size>
+		</image>
 
-<!-- System View -->  
-<feature supported="carousel">
-<view name="system">
- <!-- Carousel -->
- <carousel name="systemcarousel">
-  <type>vertical</type>
-  <origin>0.5 0.5</origin>
-  <pos>0.35 0.625</pos>
-  <size>0.25 1.15</size>
-  <logoScale>1</logoScale>
-  <logoSize>0.3 0.4</logoSize>
-  <color>00000000</color>
-  <maxLogoCount>5</maxLogoCount>
-  <logoAlignment>center</logoAlignment> 
-  <zIndex>2</zIndex>        
- </carousel>
- <!-- Carousel Text -->
- <text name="systemInfo">
-  <fontPath>./_assets/fonts/${mainFont}</fontPath>
-  <fontSize>0.04</fontSize>
-  <backgroundColor>00000000</backgroundColor>
-  <color>${mainColor}</color>
-  <origin>0.5 0.5</origin>
-  <pos>0.725 0.625</pos>
-  <alignment>center</alignment>
- </text>
-</view>
-</feature>
+		<!-- Text Logo -->
+		<text name="logoText">
+			<fontPath>./_assets/fonts/${carouselFont}</fontPath>
+			<text>${system.fullName}</text>
+			<color>${mainColor}</color>
+			<forceUppercase>1</forceUppercase>
+			<lineSpacing>1</lineSpacing>
+		</text>
 
-<!-- Basic/Detailed/Video/Grid View -->
-<view name="basic, detailed, video, grid">
- <!-- Text Logo -->
- <text name="logoText">
-  <alignment>center</alignment>
-  <fontSize>0.06</fontSize>
-  <origin>0.5 0.5</origin>
-  <pos>0.1 0.25</pos>
- </text>
- <!-- Label Genre -->	
- <text name="md_lbl_genre">
-  <alignment>right</alignment>
-  <origin>1 0.5</origin>
-  <pos>0.08 0.5833333333333333</pos>
-  <size>0.4 0.2</size>
- </text>
- <!-- Genre -->	
- <text name="md_genre">
-  <alignment>left</alignment>
-  <origin>0 0.5</origin>
-  <pos>0.085 0.5833333333333333</pos>
-  <size>0.4 0.2</size>
- </text>
- <!-- Label Players -->	
- <text name="md_lbl_players">
-  <alignment>right</alignment>
-  <origin>1 0.5</origin>
-  <pos>0.09 0.6666666666666667</pos>
-  <size>0.4 0.2</size>
- </text>
- <!-- Players -->	
- <text name="md_players">
-  <alignment>left</alignment>
-  <origin>0 0.5</origin>
-  <pos>0.095 0.6666666666666667</pos>
-  <size>0.4 0.2</size>
- </text>
- <!-- Gamelist -->
- <textlist name="gamelist">
-  <origin>0.5 0.5</origin>
-  <pos>0.35 0.5</pos>
-  <size>0.25 0.90</size>
- </textlist>
- <!-- Description -->	
- <text name="md_description">
-  <origin>0.5 0.5</origin>
-  <pos>0.725 0.625</pos>
-  <size>0.4 0.2</size>
- </text>
- <!-- Boxart -->
- <image name="md_image">
-  <origin>0.5 0.5</origin>
-  <pos>0.725 0.25</pos>
-  <maxSize>0.4 0.4</maxSize>
- </image>
-</view>
+		<!-- Metadata Settings -->
+		<text name="md_name, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+			<fontPath>./_assets/fonts/${mainFont}</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.035</fontSize>
+			<color>${mainColor}</color>
+			<alignment>center</alignment>
+		</text>
+		<datetime name="md_lastplayed, md_releasedate">
+			<fontPath>./_assets/fonts/${mainFont}</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.035</fontSize>
+			<color>${mainColor}</color>
+		</datetime>
+		<text name="md_description">
+			<fontPath>./_assets/fonts/${descriptionFont}</fontPath>
+			<forceUppercase>0</forceUppercase>
+			<lineSpacing>0.85</lineSpacing>
+			<fontSize>0.03</fontSize>
+			<color>${secondaryColor}</color>
+			<alignment>center</alignment>
+		</text>
+		<textlist name="gamelist">
+			<fontPath>./_assets/fonts/${mainFont}</fontPath>
+			<alignment>center</alignment>
+			<lineSpacing>1.075</lineSpacing>
+			<fontSize>0.04</fontSize>
+			<selectedColor>${secondaryColor}</selectedColor>
+			<primaryColor>${mainColor}</primaryColor>
+			<secondaryColor>${secondaryColor}</secondaryColor>
+			<selectorImagePath>./_assets/dot.png</selectorImagePath>
+			<selectorImageTile>false</selectorImageTile>
+			<selectorColor>${highlightColor}</selectorColor>
+			<selectorHeight>0.001</selectorHeight>
+			<selectorOffsetY>0.045</selectorOffsetY>
+		</textlist>
+		<!-- Helpsystem -->
+		<helpsystem name="help">
+			<fontSize>0.025</fontSize>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<textColor>${secondaryColor}</textColor>
+			<iconColor>${mainColor}</iconColor>
+		</helpsystem>
 
-<!-- Video View -->
-<feature supported="video">
-<view name="video">
- <!-- Boxart -->
- <image name="md_image">
-  <origin>0.5 0.5</origin>
-  <pos>0.1 0.875</pos>
-  <maxSize>0.18 0.18</maxSize>
- </image>
- <!-- Marquee -->
- <image name="md_marquee">
-  <origin>0.5 0.5</origin>
-  <pos>0.725 0.875</pos>
-  <maxSize>0.18 0.18</maxSize>
- </image>
- <!-- Thumbnail/Video -->
- <video name="md_video">
-  <origin>0.5 0.5</origin>
-  <pos>0.725 0.25</pos>
-  <maxSize>0.4 0.4</maxSize>
-  <showSnapshotNoVideo>true</showSnapshotNoVideo>
-  <showSnapshotDelay>true</showSnapshotDelay>
-  <delay>0.2</delay>
- </video>
- </view>
- </feature>
+		<!-- Hidden Elements-->
+		<text name="md_name, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+			<pos>1 1</pos>
+			</text>
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		<rating name="md_rating">
+			<pos>1 1</pos>
+		</rating>
+	</view>
 
-<!-- Grid View -->
-<view name="grid">
- <!-- Gamename -->
- <text name="md_name">
-  <origin>0.5 0</origin>
-  <pos>0.35 0</pos>
- </text>
- <!-- Grid -->
- <imagegrid name="gamegrid">
-  <scrollDirection>vertical</scrollDirection>
-  <pos>0.2 0.05</pos>
-  <size>0.3 0.9</size>
-  <margin>0.0115 0.0115</margin>
-  <!--
-  <folderImage>./_assets/grid_folder.png</folderImage>
-  <gameImage>./_assets/grid_game.png</gameImage>
-  -->
- </imagegrid>
- <gridtile name="default">
-  <size>0.3 0.22</size>
-  <backgroundImage>./_assets/filler.png</backgroundImage>
- </gridtile>
- <gridtile name="selected">
-  <size>0.3 0.22</size>
-  <backgroundImage>./_assets/grid_selector.png</backgroundImage>
-  <backgroundColor>${highlightColor}</backgroundColor>
- </gridtile>
-</view>
+	<!-- System View -->
+	<feature supported="carousel">
+	<view name="system">
+		<!-- Carousel -->
+		<carousel name="systemcarousel">
+			<type>vertical</type>
+			<origin>0.5 0.5</origin>
+			<pos>0.35 0.625</pos>
+			<size>0.25 1.15</size>
+			<logoScale>1</logoScale>
+			<logoSize>0.3 0.4</logoSize>
+			<color>00000000</color>
+			<maxLogoCount>5</maxLogoCount>
+			<logoAlignment>center</logoAlignment>
+			<zIndex>2</zIndex>
+		</carousel>
+		<!-- Carousel Text -->
+		<text name="systemInfo">
+			<fontPath>./_assets/fonts/${mainFont}</fontPath>
+			<fontSize>0.04</fontSize>
+			<backgroundColor>00000000</backgroundColor>
+			<color>${mainColor}</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.725 0.625</pos>
+			<alignment>center</alignment>
+		</text>
+	</view>
+	</feature>
+
+	<!-- Basic/Detailed/Video/Grid View -->
+	<view name="basic, detailed, video, grid">
+		<!-- Text Logo -->
+		<text name="logoText">
+			<alignment>center</alignment>
+			<fontSize>0.06</fontSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.1 0.25</pos>
+			<size>0.18 0.4</size>
+		</text>
+		<!-- Label Genre -->
+		<text name="md_lbl_genre">
+			<alignment>right</alignment>
+			<origin>1 0.5</origin>
+			<pos>0.1 0.5833333333333333</pos>
+			<size>0.05 0.04</size>
+		</text>
+		<!-- Genre -->
+		<text name="md_genre">
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+			<pos>0.1 0.5833333333333333</pos>
+			<size>0.1 0.04</size>
+		</text>
+		<!-- Label Release Date -->
+		<text name="md_lbl_releasedate">
+			<alignment>right</alignment>
+			<origin>1 0.5</origin>
+			<pos>0.1 0.625</pos>
+			<size>0.05 0.04</size>
+		</text>
+		<!-- Release Date -->
+		<datetime name="md_releasedate">
+			<format>%Y</format>
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+			<pos>0.1 0.625</pos>
+			<size>0.1 0.04</size>
+		</datetime>
+		<!-- Label Players -->
+		<text name="md_lbl_players">
+			<alignment>right</alignment>
+			<origin>1 0.5</origin>
+			<pos>0.1 0.6666666666666667</pos>
+			<size>0.05 0.04</size>
+		</text>
+		<!-- Players -->
+		<text name="md_players">
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+			<pos>0.1 0.6666666666666667</pos>
+			<size>0.1 0.04</size>
+		</text>
+		<!-- Gamelist -->
+		<textlist name="gamelist">
+			<origin>0.5 0.5</origin>
+			<pos>0.35 0.5</pos>
+			<size>0.25 0.90</size>
+		</textlist>
+		<!-- Description -->
+		<text name="md_description">
+			<origin>0.5 0.5</origin>
+			<pos>0.725 0.625</pos>
+			<size>0.4 0.2</size>
+		</text>
+		<!-- Boxart -->
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.725 0.25</pos>
+			<maxSize>0.4 0.4</maxSize>
+		</image>
+	</view>
+
+	<!-- Video View -->
+	<feature supported="video">
+	<view name="video">
+		<!-- Boxart -->
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.1 0.875</pos>
+			<maxSize>0.20 0.15</maxSize>
+		</image>
+		<!-- Marquee -->
+		<image name="md_marquee">
+			<origin>0.5 0.5</origin>
+			<pos>0.725 0.875</pos>
+			<maxSize>0.20 0.15</maxSize>
+		</image>
+		<!-- Thumbnail/Video -->
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.725 0.25</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<delay>0.2</delay>
+		</video>
+	</view>
+	</feature>
+
+	<!-- Grid View -->
+	<view name="grid">
+		<!-- Gamename -->
+		<text name="md_name">
+			<origin>0.5 0</origin>
+			<pos>0.35 0</pos>
+		</text>
+		<!-- Grid -->
+		<imagegrid name="gamegrid">
+			<scrollDirection>vertical</scrollDirection>
+			<pos>0.2 0.05</pos>
+			<size>0.3 0.9</size>
+			<margin>0.0115 0.0115</margin>
+			<!--
+			<folderImage>./_assets/grid_folder.png</folderImage>
+			<gameImage>./_assets/grid_game.png</gameImage>
+			-->
+		</imagegrid>
+		<gridtile name="default">
+			<size>0.3 0.22</size>
+			<backgroundImage>./_assets/filler.png</backgroundImage>
+		</gridtile>
+		<gridtile name="selected">
+			<size>0.3 0.22</size>
+			<backgroundImage>./_assets/grid_selector.png</backgroundImage>
+			<backgroundColor>${highlightColor}</backgroundColor>
+		</gridtile>
+	</view>
+
 </theme>
