@@ -1,0 +1,25 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system, detailed, video, grid">
+		<text name="mds_manufacturer" extra="true">
+			<text>Various</text>
+		</text>
+		<text name="mds_release" extra="true">
+			<text>Various</text>
+		</text>
+		<text name="mds_type" extra="true">
+			<text>Various</text>
+		</text>
+		<text name="mds_cpu" extra="true">
+			<text>Various</text>
+		</text>
+		<text name="mds_generation" extra="true">
+			<text>Various</text>
+		</text>
+		<text name="mds_description" extra="true">
+			<text>Play the classic "Point and Click" graphic adventure games from different platforms and systems like MS-DOS, C64, Apple II or PC.</text>
+		</text>
+	</view>
+
+</theme>

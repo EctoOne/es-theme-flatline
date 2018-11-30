@@ -1,6 +1,8 @@
 <theme>
 <formatVersion>4</formatVersion>
 
+	<include>./_assets/mds_include.xml</include>
+
 	<!-- Color Variables -->
 	<variables>
 		<backgroundColor>111111</backgroundColor>

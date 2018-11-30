@@ -1,0 +1,25 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system, detailed, video, grid">
+		<text name="mds_manufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="mds_release" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="mds_type" extra="true">
+			<text>Console</text>
+		</text>
+		<text name="mds_cpu" extra="true">
+			<text>16-Bit</text>
+		</text>
+		<text name="mds_generation" extra="true">
+			<text>4</text>
+		</text>
+		<text name="mds_description" extra="true">
+			<text>Nintendo's second home console introduced advanced graphics and sound capabilities compared with other systems at the time.</text>
+		</text>
+	</view>
+
+</theme>

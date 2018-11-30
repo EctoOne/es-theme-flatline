@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<include>./mds_data/${system.theme}.xml</include>
+	<include>./mds_style.xml</include>
+
+	<view name="system, detailed, video, grid">
+
+		<text name="mds_lbl_manufacturer" extra="true">
+			<text>Manufacturer: </text>
+		</text>
+		<text name="mds_lbl_release" extra="true">
+			<text>Release: </text>
+		</text>
+		<text name="mds_lbl_type" extra="true">
+			<text>Type: </text>
+		</text>
+		<text name="mds_lbl_cpu" extra="true">
+			<text>CPU: </text>
+		</text>
+		<text name="mds_lbl_generation" extra="true">
+			<text>Generation: </text>
+		</text>
+
+	</view>
+</theme>

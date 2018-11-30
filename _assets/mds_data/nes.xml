@@ -1,0 +1,25 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system, detailed, video, grid">
+		<text name="mds_manufacturer" extra="true">
+			<text>Nintendo</text>
+		</text>
+		<text name="mds_release" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="mds_type" extra="true">
+			<text>Console</text>
+		</text>
+		<text name="mds_cpu" extra="true">
+			<text>8-Bit</text>
+		</text>
+		<text name="mds_generation" extra="true">
+			<text>3</text>
+		</text>
+		<text name="mds_description" extra="true">
+			<text>The best selling gaming console of its time, the NES helped revitalize the US video game industry following the video game crash of 1983.</text>
+		</text>
+	</view>
+
+</theme>
